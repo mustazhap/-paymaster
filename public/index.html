@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+	<title>Retail PayMaster</title>
+
+
+	<header class="page">
+    <div class="header-wrapper page-wrapper">
+        <a href="#!"><img src="../../assets/img/header/logo.png" alt="Logo" class="header__logo"></a>
+        <div class="header__row">
+        <div class="header__contacts">
+            <a href="tel:84956469832" class="header__phone">8 (495) 646 98 32</a>
+            <a href="email:retail@paymaster.com" class="header__email">retail@paymaster.com</a>
+        </div>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#about" class="header__nav-item"><li>о проекте</li></a>
+                    <a href="#!" class="header__nav-item"><li>тарифы</li></a>
+                    <a href="#!" class="header__nav-item"><li>преимущества</li></a>
+                    <a href="#!" class="header__nav-item"><li>партнеры</li></a>
+                    <a href="#!" class="header__nav-item"><li>клиенты</li></a>
+                </ul>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <a href="#about" class="header__nav-item">о проекте</a>
+            <a href="#!" class="header__nav-item">тарифы</a>
+            <a href="#!" class="header__nav-item">преимущества</a>
+            <a href="#!" class="header__nav-item">партнеры</a>
+            <a href="#!" class="header__nav-item">клиенты</a>
+        </nav>
+
+
+    </div>
+
+</header>
+	<section class="slider__block" id="viewport1">
+    <ul id="slidewrapper1">
+    <li class="slide__item" id="slide1">
+        <div class="slide__bg">
+            <div class="slide__content">
+                <span class="slide__text">
+                    Retail PayMaster — удобная оплата<br class="br">в магазине/ресторане/кафе
+                </span>
+                <button class="button"  onclick="cuurentBlock(0)">Подключить сейчас</button>
+            </div>
+        </div>
+    </li>
+    <li class="slide__item" id="slide1">
+        <div class="slide__bg">
+            <div class="slide__content">
+                <span class="slide__text">
+                    Retail PayMaster — удобная оплата<br class="br">в магазине/ресторане/кафе
+                </span>
+                <button class="button" onclick="cuurentBlock(0)">Подключить сейчас</button>
+            </div>
+        </div>
+    </li>
+    <li class="slide__item" id="slide1">
+        <div class="slide__bg">
+            <div class="slide__content">
+                <span class="slide__text">
+                    Retail PayMaster — удобная оплата<br class="br">в магазине/ресторане/кафе
+                </span>
+                <button class="button" onclick="cuurentBlock(0)">Подключить сейчас</button>
+            </div>
+        </div>
+    </li>
+    </ul>
+
+    <div class="slider__dots">
+        <div class="dot dot_active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+
+    </div>
+</section>
+
+	<section class="order page">
+    <div class="page-wrapper order__wrapper">
+        <div class="order__info">
+            <div class="order__item">
+                <img src="../../assets/img/order/money.png" alt="Money" class="order__ico">
+                <span class="order__text">Дешевле, чем карточный <br> зквайринг</span>
+            </div>
+            <div class="order__item">
+                <span class="order__text-ico">36 млн.</span>
+                <span class="order__text">36 млн. пользователей WebMoney <br> готовы покупать</span>
+            </div>
+            <div class="order__item">
+                <img src="../../assets/img/order/settings.png" alt="Settings" class="order__ico">
+                <span class="order__text">Маркетинговая поддержка <br> WebMoney</span>
+            </div>
+
+        </div>
+        <div class="order__form">
+            <div class="order__romb"></div>
+            <div class="order__form-row">
+                <div class="order__input order__input_left">
+                    <span class="order__title">Ваше имя*</span>
+                    <input type="text" class="order__input-form" placeholder="Иванов Иван">
+                </div>
+                <div class="order__input">
+                    <span class="order__title">Ваш телефон*</span>
+                    <input type="text" class="order__input-form" placeholder="+7  928 000 00 00">
+                </div>
+            </div>
+            <div class="order__form-row">
+                <div class="order__input order__input_left">
+                    <span class="order__title">Адрес сайта</span>
+                    <input type="text" class="order__input-form" placeholder="paymaster.ru">
+                </div>
+                <div class="order__input">
+                    <span class="order__title">E-mail адрес</span>
+                    <input type="text" class="order__input-form" placeholder="name@name.ru">
+                </div>
+            </div>
+            <div class="order__input order__input_whole">
+                <span class="order__title">Название юридического лица или ИП</span>
+                <input type="text" class="order__input-form" placeholder="ООО “Пеймастер”">
+            </div>
+            <div class="order__select">
+                <div class="order__select-item">
+                    <input type="checkbox" class="order__checkbox" id="check1">
+                    <label class="order__label" for="check1"><span></span>Подключите меня к онлайн кассе<br class="br">(в соответствии с 54 ФЗ)</label>
+                </div>
+                <div class="order__select-item">
+                    <input type="checkbox" class="order__checkbox" id="check2">
+                    <label class="order__label" for="check2"><span></span>Хочу принимать платежи в соц сетях</label>
+                </div>
+            </div>
+            <button class="button order__button">Отправить заявку</button>
+        </div>
+    </div>
+</section>
+	<section class="payment page">
+    <div class="payment-wrapper page-wrapper">
+        <p class="payment__text">
+            Прием платежей на вашей торговой точке с помощью Retail PayMaster -  это один договор,<br class="br">
+            одна касса и множество популярных способов оплаты и систем лояльности:<br class="br">
+            WebMoney / WeChatPay / AliPay / Халва / Спасибо...
+        </p>
+        <span class="payment__adv">С Retail PayMaster оплата товаров и услуг станет удобнее для покупателя и выгоднее для продавца</span>
+        <span class="payment__adv">Не требует дополнительного оборудования и затрат на обслуживание</span>
+        <span class="payment__title">Тарифы и системы</span>
+        <div class="payment__table">
+            <div class="payment__row">
+                <div class="payment__col">Оборот организации<br> в месяц</div>
+                <div class="payment__col payment__col_center"><img src="../../assets/img/payment/payment_1.png" alt=""></div>
+                <div class="payment__col payment__col_center"><img src="../../assets/img/payment/payment_2.png" alt=""></div>
+                <div class="payment__col payment__col_center"><img src="../../assets/img/payment/payment_3.png" alt=""></div>
+                <div class="payment__col payment__col_center"><img src="../../assets/img/payment/payment_4.png" alt=""></div>
+            </div>
+            <div class="payment__row">
+                <div class="payment__col payment__col_bottom">
+                    <span class="payment__table_info">До 100</span>
+                    <span class="payment__table_info">100-300</span>
+                    <span class="payment__table_info">более 300</span>
+                </div>
+                <div class="payment__col payment__col_center payment__col_bottom">
+                    <span class="payment__table_info payment__table_number">2.0</span>
+                    <span class="payment__table_info payment__table_number">1.9</span>
+                    <span class="payment__table_info payment__table_number">1.8
+                    </span>
+                </div>
+                <div class="payment__col payment__col_center payment__col_bottom">
+                    <span class="payment__soon">Скоро</span>
+                    </span>
+                </div>
+                <div class="payment__col payment__col_center payment__col_bottom">
+                    <span class="payment__soon">Скоро</span>
+                    </span>
+                </div>
+                <div class="payment__col payment__col_center payment__col_bottom">
+                    <span class="payment__soon">Скоро</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="payment__table-mob">
+            <div class="payment__mob-col">
+                <div class="payment__mob-item-top payment__mob-item-top_i">Оборот организации<br> в месяц</div>
+                <div class="payment__mob-item payment__mob-item_i">
+                    <span class="payment__table_info">До 100</span>
+                    <span class="payment__table_info">100-300</span>
+                    <span class="payment__table_info">более 300</span>
+                </div>
+            </div>
+            <div class="payment__mob-col">
+                <div id="viewport3">
+                    <ul id="slidewrapper3">
+                        <li class="slide3">
+                            <div class="payment__mob-col">
+                                <div class="payment__mob-item-top"><img src="../../assets/img/payment/payment_1.png" alt=""></div>
+                                <div class="payment__mob-item"><span class="payment__soon">Скоро</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide3">
+                            <div class="payment__mob-col">
+                                <div class="payment__mob-item-top"><img src="../../assets/img/payment/payment_2.png" alt=""></div>
+                                <div class="payment__mob-item"><span class="payment__soon">Скоро</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide3">
+                            <div class="payment__mob-col">
+                                <div class="payment__mob-item-top"><img src="../../assets/img/payment/payment_3.png" alt=""></div>
+                                <div class="payment__mob-item"><span class="payment__soon">Скоро</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide3">
+                            <div class="payment__mob-col">
+                                <div class="payment__mob-item-top"><img src="../../assets/img/payment/payment_4.png" alt=""></div>
+                                <div class="payment__mob-item"><span class="payment__soon">Скоро</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="prev-next-btns">
+                        <div id="prev-btn3"><</i></div>
+                        <div id="next-btn3">></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</section>
+
+<div class="myModal modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <img class="close" src="../../assets/img/header/close.png" alt="X">
+            <div class="order__form-row">
+                <div class="order__input order__input_left">
+                    <span class="order__title">Ваше имя*</span>
+                    <input type="text" class="order__input-form" placeholder="Иванов Иван">
+                </div>
+                <div class="order__input">
+                    <span class="order__title">Ваш телефон*</span>
+                    <input type="text" class="order__input-form" placeholder="+7  928 000 00 00">
+                </div>
+            </div>
+            <div class="order__form-row">
+                <div class="order__input order__input_left">
+                    <span class="order__title">Адрес сайта</span>
+                    <input type="text" class="order__input-form" placeholder="paymaster.ru">
+                </div>
+                <div class="order__input">
+                    <span class="order__title">E-mail адрес</span>
+                    <input type="text" class="order__input-form" placeholder="name@name.ru">
+                </div>
+            </div>
+            <div class="order__input order__input_whole">
+                <span class="order__title">Название юридического лица или ИП</span>
+                <input type="text" class="order__input-form" placeholder="ООО “Пеймастер”">
+            </div>
+            <div class="order__select">
+                <div class="order__select-item">
+                    <input type="checkbox" class="order__checkbox" id="check3">
+                    <label class="order__label" for="check3"><span></span>Подключите меня к онлайн кассе<br class="br">(в соответствии с 54 ФЗ)</label>
+                </div>
+                <div class="order__select-item">
+                    <input type="checkbox" class="order__checkbox" id="check4">
+                    <label class="order__label" for="check4"><span></span>Хочу принимать платежи в соц сетях</label>
+                </div>
+            </div>
+            <button class="button order__button">Отправить заявку</button>
+    </div>
+</div>
+	<section class="why page">
+    <div class="why__wrapper page-wrapper">
+        <span class="why__title">Почему PayMaster Retail</span>
+        <div class="why__row">
+            <div class="why__item">
+                <img src="../../assets/img/why/why_1.png" alt="" class="why__ico">
+                <p class="why__descr">Привлекаем новых клиентов:<br class="br">
+                    >36млн. WebMoney>400млн. WeChatPay…</p>
+            </div>
+            <div class="why__item">
+                <img src="../../assets/img/why/why2.png" alt="" class="why__ico">
+                <p class="why__descr">Повышает лояльность ваших клиентов за счет<br class="br">
+                    быстрой и удобной оплаты по QR-коду<br class="br">
+                    и внедрения систем лояльности</p>
+            </div>
+        </div>
+        <div class="why__row">
+            <div class="why__item">
+                <img src="../../assets/img/why/why_3.png" alt="" class="why__ico">
+                <p class="why__descr">Увеличить средний чек и общую выручку<br class="br">
+                    за счет предоставления альтернативных<br class="br">
+                    способов оплаты</p>
+            </div>
+            <div class="why__item">
+                <img src="../../assets/img/why/why_4.png" alt="" class="why__ico">
+                <p class="why__descr">Сокращаем расходы на эквайринг<br class="br">
+                    и инкассацию</p>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="partners page">
+    <div class="partners__wrapper page-wrapper">
+        <span class="partners__title">Партнеры</span>
+        <p class="partners__descr">Выберите производителя вашего кассового ПО из списка или сообщите нам о другом решении:</p>
+        <div class="partners__row">
+            <img src="../../assets/img/partners/partners_1.png" alt="" class="partners__item">
+            <img src="../../assets/img/partners/partners_2.png" alt="" class="partners__item">
+            <img src="../../assets/img/partners/partners_3.png" alt="" class="partners__item">
+            <img src="../../assets/img/partners/partners_4.png" alt="" class="partners__item">
+        </div>
+        <button class="button partners__button">Другие решения</button>
+    </div>
+
+</section>
+	<section class="video">
+    <div class="video__item">
+        <div id="viewport">
+            <ul id="slidewrapper">
+                <li class="slide">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/E8rb4Pf_y0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </li>
+                <li class="slide">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JnPgood3DGo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </li>
+                <li class="slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/c31jZY-VIqw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+            </ul>
+            <div id="prev-next-btns">
+                <div id="prev-btn"><i class="icon-left"></i></div>
+                <div id="next-btn"><i class="icon-left"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video__green1"></div>
+    <div class="video__green2"></div>
+    <div class="video__green4"></div>
+    <div class="video__green3"></div>
+</section>
+	<section class="advantages page">
+    <div class="advantages__wrapper page-wrapper">
+        <span class="advantages__title">
+            Уже используют все преимущества Paymaster:
+        </span>
+        <div class="advantages__row">
+            <div id="prev-btn2"><img src="../../assets/img/advantages/right.png" alt=""></div>
+            <div id="viewport2">
+                <ul id="slidewrapper2">
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_1.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_2.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_3.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_4.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_1.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_2.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_3.png" alt="" class="advantages__item">
+                    </li>
+                    <li class="slide2"><img src="../../assets/img/advantages/advantages_4.png" alt="" class="advantages__item">
+                    </li>
+                </ul>
+                <div id="prev-next-btns">
+                </div>
+
+            </div>
+            <div id="next-btn2"><img src="../../assets/img/advantages/left.png" alt=""</div>
+
+        </div>
+    </div>
+</section>
+	<footer class="page">
+    <div class="footer__wrapper page-wrapper">
+        <div class="footer__romb"></div>
+        <span class="footer__title">Просто установите бесплатное приложение на Вашу кассу</span>
+        <span class="footer__descr">И получайте дополнительную прибыль за счет привлечения новых клиентов, удобного способа оплаты покупки
+<br class="br">пониженной комиссии на эквайринг.</span>
+        <button class="button" onclick="cuurentBlock(0)">Подключить сейчас</button>
+        <span class="footer__text">Принимать к оплате WebMoney / WeChatPay / AliPay/ Халва уже можно на кассах  "Эвотор", "Штрих-М", UCS(R-Keeper) и iiko.</span>
+        <span class="footer__white-text">Оставьте заявку и наш менеджер свяжется с Вами и поможет настроить вашу кассу.</span>
+        <div class="footer__row">
+            <img src="../../assets/img/footer/footer.png" alt="" class="footer__logo">
+            <div class="footer__col">
+                <span class="footer__site">info.paymaster.ru</span>
+                <a class="footer__link" href="#!">Вход в личный кабинет</a>
+            </div>
+            <div class="footer__col">
+                <a href="tel:84956469832" class="footer__phone">8 (495) 644 98 32</a>
+                <a class="footer__link" href="#!">Для партнеров</a>
+            </div>
+            <div class="footer__col">
+                <a href="email:retail@paymaster.ru" class="footer_email">retail@paymaster.ru</a>
+            </div>
+            <div class="footer__col">
+                <div class="footer__soc-row">
+                <a href="#!" class="footer__soc"><i class="icon-vk"></i></a>
+                <a href="#!" class="footer__soc"><i class="icon-fb"></i></a>
+                <a href="#!" class="footer__soc"><i class="icon-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__mob-col">
+                <span class="footer__site">info.paymaster.ru</span>
+                <a href="tel:84956469832" class="footer__phone">8 (495) 644 98 32</a>
+                <a href="email:retail@paymaster.ru" class="footer_email">retail@paymaster.ru</a>
+            </div>
+            <div class="footer__mob-col">
+                <a class="footer__link" href="#!">Вход в личный кабинет</a>
+                <a class="footer__link" href="#!">Для партнеров</a>
+                <div class="footer__soc-row">
+                    <a href="#!" class="footer__soc"><i class="icon-vk"></i></a>
+                    <a href="#!" class="footer__soc"><i class="icon-fb"></i></a>
+                    <a href="#!" class="footer__soc"><i class="icon-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<div class="legacy page">
+    <div class="legacy__wrapper page-wrapper">
+        <p class="legacy__title">PayMaster, 2010-2016. Все права защищены.  Техническое решение разработано ЗАО "Вычислительные силы"</p>
+        <p class="legacy__descr">Все договорные отношения с нашими партнерами (услуги ИТО и как расчетный банк) полностью курирует кредитная организация АО ККБ (Консервативный Коммерческий Банк) - Лицензия на <br class="br"> осуществление банковских операций со средствами юридических лиц в рублях и иностранной валюте № 1087 от 05.02.2016г. Максимальный уровень сертификата PSIDSS</p>
+</div>
+</div>
+
+</head>
+<body>
+	
+
+
+
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
