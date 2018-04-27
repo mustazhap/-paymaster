@@ -1,0 +1,160 @@
+.order{
+  padding-top: 50px;
+}
+.order__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.order__info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 150px;
+  box-sizing: border-box;
+  background: $bgColor;
+  box-shadow: 0px 20px 41px 0px rgba(0,0,0,0.29);
+
+}
+
+.order__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.order__text-ico{
+  color: $green;
+  font-size: 48px;
+  font-family: $OpenSansSemiBold;
+}
+
+.order__text{
+  text-align: center;
+  font-size: 18px;
+  color: #242424;
+  font-family: $OpenSansLight;
+  margin-top: 5px;
+}
+
+.order__form{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  align-items: center;
+  padding: 60px 150px;
+  box-shadow: 0px 20px 41px 0px rgba(0,0,0,0.29);
+  position: relative;
+
+}
+
+.order__romb{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -21px;
+  transform: rotate(45deg);
+  background: #efefef;
+}
+
+.order__form-row{
+  display: flex;
+  justify-content: space-between;
+  width: 100% ;
+
+}
+
+.order__input{
+  display: flex;
+  flex-direction: column;
+  background: #efefef;
+  margin-bottom: 15px;
+  padding: 20px 25px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.order__input_left{
+  margin-right: 20px;
+}
+
+.order__input_whole{
+  box-sizing: border-box;
+}
+.order__input-form{
+  outline: none;
+  border: none;
+  background: #efefef;
+  font-size: 16px;
+  margin-top: 10px;
+  &::placeholder{
+    font-size: 16px;
+
+  }
+}
+
+.order__title{
+  color: #8b8b8b;
+  font-family: $OpenSansLight;
+  font-size: 13px;
+}
+
+.order__select{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  align-items: center;
+}
+
+.order__select-item{
+  display: flex;
+}
+
+.order__checkbox{
+  width: 25px;
+  height: 25px;
+  background: #efefef;
+  border: none;
+  border-radius: 2px;
+}
+
+.order__button{
+  margin-top: 30px;
+}
+
+.order__checkbox{
+  display: none;
+}
+.order__label{
+  display: flex;
+  margin-right: 45px;
+  color: #8b8b8b;
+  font-family: $OpenSansLight;
+  font-size: 13px;
+  align-items: center;
+  span{
+    margin-right: 10px;
+  }
+}
+.order__checkbox + .order__label span{
+  display:inline-block;
+  background: #efefef;
+  width:25px;
+  height:25px;
+  border-radius: 2px;
+  vertical-align:middle;
+  cursor:pointer;
+  position: relative;
+}
+
+.order__checkbox:checked + .order__label span{
+  &:before{
+    content: '';
+    background:url("../../assets/img/order/conf.png") left top no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+  }
+}
+

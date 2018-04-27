@@ -1,0 +1,115 @@
+.slider__block{
+  position: relative;
+}
+
+.slide__item{
+  background: url("../../assets/img/slider/slide1.png") no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  height: 540px;
+  width: calc(100%/4);
+  list-style: none;
+  display: inline;
+  float: left;
+
+}
+
+.slide__bg{
+  background: rgba(#084861, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+
+.slide__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide__text{
+  font-size: 36px;
+  font-family: $OpenSansBold;
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.button{
+  color: white;
+  font-family: $OpenSansSemiBold;
+  background: $green;
+  border-radius: 5px;
+  border: none;
+  padding: 25px 45px;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.29);
+}
+
+.slider__dots{
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  z-index: 9999;
+  justify-content: center;
+  width: 100%;
+}
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(#fff, 0.3);
+  margin-right: 7px;
+  cursor: pointer;
+  &:last-child{
+    margin-right: 0;
+  }
+  &_active{
+    background: #fff;
+    cursor: default;
+  }
+}
+
+
+#viewport1 {
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
+  width: 100%;
+  height: 540px;
+}
+
+#slidewrapper1 {
+  position: relative;
+  width: calc(100% * 4);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+  -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+  transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper1, #slidewrapper1 ul, #slidewrapper1 li {
+  margin: 0;
+  padding: 0;
+}
+
+.slide1 {
+  width: calc(100%/4);
+
+
+}
+

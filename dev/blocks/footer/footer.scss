@@ -1,0 +1,133 @@
+footer{
+  background: #1f759a;
+}
+
+.footer__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 60px 0;
+}
+
+.footer__title{
+  font-size: 30px;
+  font-family: $OpenSans;
+  margin-bottom: 20px;
+}
+
+.footer__descr{
+  text-align: center;
+  font-size: 16px;
+  font-family: $OpenSansLight;
+  margin-bottom: 20px;
+}
+
+.footer__text{
+  color: #deedf9;
+  font-family: $OpenSansLight;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer__white-text{
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: $OpenSansBold;
+  color: white;
+}
+
+.footer__row{ 
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__col, .footer__mob-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer__mob-col{
+  display: none;
+}
+
+.footer__logo{
+  margin-right: 80px;
+}
+
+.footer__site{
+  font-family: $OpenSansSemiBold;
+  font-size: 16px;
+}
+
+.footer__link{
+  color: white;
+  font-family: $OpenSansLight;
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  width: max-content;
+  line-height: 1;
+  margin-top: 15px;
+}
+
+.footer__phone{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: $OpenSansSemiBold;
+}
+
+.footer__soc-row{
+  display: flex;
+  margin-bottom: 28px;
+}
+.footer__soc{
+  text-decoration: none;
+  margin-right: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.footer_email{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: $OpenSansSemiBold;
+  margin-bottom: 29px;
+}
+
+.legacy{
+  background: #cfd8e1;
+  padding: 20px 0;
+}
+
+
+.footer__romb{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -21px;
+  transform: rotate(45deg);
+  background: #fff;
+}
+.legacy__title, .legacy__descr{
+  color: black;
+  font-size: 12px;
+  font-family: $OpenSansLight;
+  margin: 0;
+
+}
+
+.legacy__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.legacy__descr{
+  margin-top: 15px;
+}

@@ -1,0 +1,35 @@
+.partners__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+
+}
+
+.partners__title{
+  font-size: 30px;
+  font-family: $OpenSans;
+}
+
+.partners__descr{
+  font-family: $OpenSansLight;
+  font-size: 18px;
+}
+
+.partners__row{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.partners__item{
+  margin-right: 65px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.partners__button{
+  padding: 15px 50px;
+}

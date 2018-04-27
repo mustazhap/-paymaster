@@ -1,0 +1,33 @@
+.why{
+  background: #1f759a;
+  color: white;
+}
+
+.why__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.why__row{
+  display: flex;
+  margin-bottom: 40px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.why__item{
+  display: flex;
+  align-items: center;
+  width: 450px;
+}
+
+.why__descr{
+  margin-left: 15px;
+}
+
+.why__title{
+  font-size: 30px;
+  font-family: $OpenSans;
+}
